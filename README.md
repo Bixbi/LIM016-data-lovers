@@ -258,17 +258,12 @@ a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
 ![boceto](Vista_5.jpeg)
 
 #### Prototipo de alta fidelidad
+[Figma](Figma1.jpeg) 
+[Figma](Figma2.jpeg) 
+[Figma](Figma3.jpeg) 
+[Figma](Figma4.jpeg) 
+[Figma](Figma5.jpeg) 
 
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc.
-
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
-diseño debe seguir los fundamentos de _visual design_.
 
 #### Testeos de usabilidad
 
