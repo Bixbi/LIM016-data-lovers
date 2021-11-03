@@ -252,8 +252,10 @@ a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
 ### Diseño de la Interfaz de Usuario
 
 #### Prototipo de baja fidelidad
-
-.
+![boceto](Vista_1.jpeg)
+![boceto](Vista_2.3.jpeg)
+![boceto](Vista_4.jpeg)
+![boceto](Vista_5.jpeg)
 
 #### Prototipo de alta fidelidad
 
