@@ -16,21 +16,19 @@
 
 ## 1. Preámbulo
 
-Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.
+La visualización de datos es la práctica de traducir información en un contexto visual, puede ser representado en mucho de los casos como un mapa o gráfico, para facilitar que el cerebro humano comprenda y extraiga información que considere útil. El objetivo principal de la visualización de datos es facilitar la identificación de patrones, tendencias y valores atípicos en grandes conjuntos de datos o solamente transfomar eso datos en información para el interes de la persona que los visualiza.
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
+La visualización de datos es uno de los pasos del proceso de ciencia de datos, que establece que una vez que los datos se han recopilado, procesado y modelado, deben visualizarse para obtener conclusiones. Puede ser utilizado por los maestros para mostrar los resultados de las pruebas de los estudiantes, por científicos informáticos que exploran los avances en inteligencia artificial (IA) o por ejecutivos que buscan compartir información con las partes interesadas. También juega un papel importante en proyectos de big data pero esto no es todo se necesitaban una forma de obtener una visión general de sus datos de manera rápida y fácil, por lo tanto, las herramientas de visualización eran un ajuste natural.
 
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario
-al lado derecho.
+Entre los beneficios de la visualización de datos incluyen:
 
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+* La capacidad de absorber información rápidamente, mejorar los conocimientos y tomar decisiones más rápidas.
+* Una capacidad mejorada para mantener el interés de la audiencia con información que puedan entender.
+* Una distribución fácil de información que aumenta la oportunidad de compartir ideas con todos los involucrados.
+* Una mayor capacidad para actuar sobre los resultados rápidamente.
+
+Información obtenida de (https://www.computerweekly.com/es/definicion/Visualizacion-de-datos)
+
 
 ## 2. Resumen del proyecto
 
@@ -44,7 +42,7 @@ nos referimos a distintos cálculos que puedes hacer con la data para mostrar
 información aún más relevante para los usuarios (promedio, el valor máximo
 o mínimo, etc).
 
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
+Esta vez te proponemos una serie de datos de diferentes _temágit initticas_ para que
 explores y decidas con qué temática te interesa trabajar. Hemos elegido
 específicamente estos sets de datos porque creemos que se adecúan bien a esta
 etapa de tu aprendizaje.
