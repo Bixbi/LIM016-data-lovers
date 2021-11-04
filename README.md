@@ -16,74 +16,23 @@
 
 ## 1. Preámbulo
 
-Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.
+La visualización de datos es la práctica de traducir información en un contexto visual, puede ser representado en mucho de los casos como un mapa o gráfico, para facilitar que el cerebro humano comprenda y extraiga información que considere útil. El objetivo principal de la visualización de datos es facilitar la identificación de patrones, tendencias y valores atípicos en grandes conjuntos de datos o solamente transfomar eso datos en información para el interes de la persona que los visualiza.
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
+La visualización de datos es uno de los pasos del proceso de ciencia de datos, que establece que una vez que los datos se han recopilado, procesado y modelado, deben visualizarse para obtener conclusiones. Puede ser utilizado por los maestros para mostrar los resultados de las pruebas de los estudiantes, por científicos informáticos que exploran los avances en inteligencia artificial (IA) o por ejecutivos que buscan compartir información con las partes interesadas. También juega un papel importante en proyectos de big data pero esto no es todo se necesitaban una forma de obtener una visión general de sus datos de manera rápida y fácil, por lo tanto, las herramientas de visualización eran un ajuste natural.
 
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario
-al lado derecho.
+Entre los beneficios de la visualización de datos incluyen:
 
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+  * La capacidad de absorber información rápidamente, mejorar los conocimientos y tomar decisiones más rápidas.
+  * Una capacidad mejorada para mantener el interés de la audiencia con información que puedan entender.
+  * Una distribución fácil de información que aumenta la oportunidad de compartir ideas con todos los involucrados.
+  * Una mayor capacidad para actuar sobre los resultados rápidamente.
+
+Información obtenida de (https://www.computerweekly.com/es/definicion/Visualizacion-de-datos)
+
 
 ## 2. Resumen del proyecto
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
-
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y hacer algún cálculo agregado**. Con cálculo agregado
-nos referimos a distintos cálculos que puedes hacer con la data para mostrar
-información aún más relevante para los usuarios (promedio, el valor máximo
-o mínimo, etc).
-
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
-
-Una vez que definas tu área de interés, buscar entender quién es tu usuario
-y qué necesita saber o ver exactamente; luego podrás construir la interfaz que
-le ayude a interactuar y entender mejor esos datos.
-
-Estos son datos que te proponemos:
-
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 251 Pokémon de la región de Kanto
-  y Johto, junto con sus respectivas estadísticas usadas en el juego
-  [Pokémon GO](http://pokemongolive.com).
-  - [Investigación con jugadores de Pokémon Go](src/data/pokemon/README.md)
-
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de campeones en una liga del
-  juego League of Legends (LoL).
-  - [Investigación con jugadores de LoL](src/data/lol/README.md)
-
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
-  Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty. [API Rick and Morty](https://rickandmortyapi.com).
-  - [Investigación con seguidores de Rick and Morty](src/data/rickandmorty/README.md)
-
-* [Juegos Olímpicos de Río de Janeiro](src/data/athletes/athletes.json).
-  Este set nos proporciona la lista de los atletas que ganaron medallas en las
-  olímpiadas de Río de Janeiro.
-  - [Investigación con interesados en juegos olímpicos de Río de Janeiro](src/data/athletes/README.md)
-
-* [Studio Ghibli](src/data/ghibli/ghibli.json).
-  En este set encontrarás una lista de las animaciones y sus personajes del
-  [Studio Ghibli](https://ghiblicollection.com/).
-  - [Investigación con seguidores de las animaciones del Studio Ghibli](src/data/ghibli/README.md)
-
-El objetivo principal de este proyecto es que aprendas a diseñar y construir una
-interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
-usuario necesita.
+En este proyecto se crea una aplicación web para mostrar informacion diversa y muy importante que se pueda filtrar por diversos criterios, como pueden ser fecha de producción, nominaciones, actores entre otros.
 
 ## 3. Objetivos de aprendizaje
 
@@ -303,24 +252,18 @@ a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
 ### Diseño de la Interfaz de Usuario
 
 #### Prototipo de baja fidelidad
-
-Durante tu trabajo deberás haber hecho e iterado bocetos (_sketches_) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
-iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
-`README.md`.
+![boceto](Vista_1.jpeg)
+![boceto](Vista_2.3.jpeg)
+![boceto](Vista_4.jpeg)
+![boceto](Vista_5.jpeg)
 
 #### Prototipo de alta fidelidad
+[Figma](Figma1.jpeg) 
+[Figma](Figma2.jpeg) 
+[Figma](Figma3.jpeg) 
+[Figma](Figma4.jpeg) 
+[Figma](Figma5.jpeg) 
 
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc.
-
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
-diseño debe seguir los fundamentos de _visual design_.
 
 #### Testeos de usabilidad
 
