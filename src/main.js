@@ -6,7 +6,7 @@ import {
 
 
 const filmsData = data.films;
-const containerPokemons = document.querySelector('#containerFilms');
+const containerFilms = document.querySelector('#containerFilms');
 
 
 
@@ -24,7 +24,7 @@ const filmsList = (list) => {
 
                                  </div>`;
 
-        containerPokemons.appendChild(frameFilms);
+        containerFilms.appendChild(frameFilms);
     });
 };
 
