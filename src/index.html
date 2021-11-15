@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>LoveGhibli</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="fontello.css" />>
+  <link rel="stylesheet" href="fontello.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
 </head>
 
 <body>
-  <!--Cabecera donde esta el menu y la barra de busqueda-->
+
+  <!-------Cabecera donde esta el menu y la barra de busqueda-------->
   <header>
-    <!--Barra de busqueda y menu superior-->
+    <!-----Barra de busqueda y menu superior----->
     <div class="container">
       <img id="logo" src="img/logo.png" alt="">
-      <li class="icon-search">
-        <input type="search" placeholder="Buscar película" autocomplete="off" spellcheck="false">
-      </li>
+      <div class="icon-search">
+        <input id= "searchFilms" type="search" placeholder="Buscar tu película aquí" autocomplete="off" spellcheck="false">
+
+      </div>
       <input type="checkbox" id="menu-bar">
       <label class="icon-menu" for="menu-bar"></label>
       <nav class="menuHup">
-        <a href="">Inicio</a>
-        <a href="">Sobre LoveGhibli</a>
-        <a href="">Servicios</a>
-        <a href="">Ayuda</a>
-        <a href="">Salir</a>
+        <a href="">INICIO</a>
+        <a href="">LOVEGHIBLI</a>
+        <a href="">REGISTRARSE</a>
+        <a href="">SALIR</a>
       </nav>
     </div>
   </header>
 
-  <!--Nav de carousel-->
+  <!-----Nav de carousel----->
   <nav>
-    <div id="carousel"></div>
-    <div id="filtrado"></div>
+    <div id="carousel">    </div>
+    <div id="filtrado">
+
+
+    </div>
 
   </nav>
 
-  <!--Espacio de contenido de la web-->
-  <section>
+  <!-----Espacio de contenido de la web----->
     <main>
       <div id="containerFilms"></div>
     </main>
-  </section>
-  <!--Menú lateral izquierdo-->
-  <aside></aside>
-  <!--pie de página-->
-  <footer></footer>
+ 
+  <!-----Menú lateral izquierdo----->
+  <aside> </aside>
+  <!-----pie de página----->
+  <footer>
+    
+  </footer>
 
   <script src="main.js" type="module"></script>
 </body>

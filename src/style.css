@@ -1,43 +1,37 @@
-/*aplicar fuente de google fonts*/
+/* ---------------aplicar fuente de google fonts ---------------- */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300;400;600&display=swap');
 
-/*selector universal, estilos básicos, box-sizing estilo de caja*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Mohave:wght@300&family=Open+Sans+Condensed:wght@700&family=Open+Sans:wght@300;400;600&family=Oswald:wght@500&display=swap');
+/* ---------------selector universal, estilos básicos, box-sizing estilo de caja---------------- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*aplicamos la fuente al cuerpo*/
+
+/* ---------------aplicamos la fuente al cuerpo ---------------- */
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
 /*Menu pegado utilizar position fixed, z-index para que este por delante de los elementos*/
 header{
     width: 100%;
     height: 50px;
-    background: #FFEA31;
+    background: rgba(255, 234, 49, 0.7);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
 }
 
-
-
+/* ---------------Formato del container del header---------------- */
 .container{
     width: 94%;
     margin: auto;
 }
 
-
-header .container {
-    display: table;
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
+/* ---------------Formato del logo---------------- */
 #logo {
    width: 120px;
    height: 65px;
@@ -45,57 +39,55 @@ header .container {
    padding: 8px;
 }
 
-
-/*Limpiar los float*/
-
+/* ---------------Limpia los floats--------------- */
 header .container{
-    display: table;
+    display:table;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
 
 }
 
-/*estilo en menu de la cabecera*/
-
+/* ---------------Estilo del menu en el header--------------- */
 #menu-bar{
     display: none;
 }
-
 header label{
     float: right;
     font-size: 28px;
-    margin: 6px 0;
+    margin: 15px 5;
     cursor: pointer;
 }
-
 .menuHup{
     position: absolute;
     top: 50px;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgb(255, 234, 49, 0.9);
+    background: rgba(255, 0, 0, 0.9);
     transition: all 0.5s;
     transform: translate(-100%);
+    border-radius: 01em;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
-
-
 .menuHup a{
     display: block;
-    color: #fff;
+    color: #3e3e3e;
     height: 50px;
     text-decoration: none;
     padding: 15px;
-    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgb(24, 20, 20);
+    border-radius: 01em;
 }
-
 .menuHup a:hover{
-    background: rgb(255, 255, 255,0.3);
+    background: rgba(255, 255, 255, 0.8);
 }
-
 #menu-bar:checked ~ .menuHup{
     transform: translateX(0%);
 
 }
 
+/* ---------------Responsive--------------- */
 @media (min-width: 1024px){
     .menuHup{
         position: static;
@@ -105,23 +97,19 @@ header label{
         float: right;
         display: flex;
     }
-
     .menuHup a{
         border: none;
     }
-
-
     header label {
         display: none;
     }
 }
-
 img{
     border-radius: 01em;
     
 }
 
-/*Estilos de las ventadas de films**/
+/* ---------------Estilos de los cuadros de peliculas--------------- */
 
 #containerFilms{/**contenedor de card*/
     margin-left: auto;
@@ -148,3 +136,9 @@ img{
     cursor: pointer;
     white-space: nowrap;
 }
+
+
+
+/*aside - menu derecho*/
+
+
