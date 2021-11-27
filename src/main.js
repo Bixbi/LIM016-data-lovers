@@ -40,6 +40,7 @@ const filmsList = (list) => {
 };
 filmsList(filmsData);
 
+
 inputSearch.addEventListener('input', () => {
     containerFilms.innerHTML = '';
     filmsList(searchData(filmsData, inputSearch.value));
@@ -170,10 +171,15 @@ let prevAction = (leftPosition, slickWidth, track) => {
         track.style.left = `${-1 * (leftPosition - slickWidth)}px`;
     }
 }
-
 let nextAction = (leftPosition, trackWidth, listWidth, slickWidth, track) => {
     if (leftPosition < (trackWidth - listWidth)) {
         track.style.left = `${-1 * (leftPosition + slickWidth)}px`;
     }
 }
+inputSearch.addEventListener('input', () =>{
+    const newDataFilter = searchData(filmsData, inputSearch.value);
+        containerFilms.innerHTML = '';
+        filmsList(newDataFilter);
+});
+
 
