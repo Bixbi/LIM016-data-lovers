@@ -1,103 +1,295 @@
-/*aplicar fuente de google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300&family=Mohave:wght@300&family=Open+Sans+Condensed:ital,wght@0,700;1,300&family=Open+Sans:wght@300;400;600&family=Oswald:wght@500&display=swap');
 
-/*selector universal, estilos básicos, box-sizing estilo de caja*/
+/*----------selector universal, estilos básicos, box-sizing estilo de caja-----------*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*aplicamos la fuente al cuerpo*/
+
+/*--------------------------------aplicamos la fuente al cuerpo----------------------*/
 body{
     font-family: 'Open Sans', sans-serif;
 }
-/*Menu pegado utilizar position fixed, z-index para que este por delante de los elementos*/
+
+/*----Menu pegado utilizar position fixed, z-index para que este por delante de los elementos-------*/
 header{
     width: 100%;
     height: 50px;
-    background: #FFEA31;
+    background: rgba(255, 234, 49, 0.7);
+    color: #fff;
     position: fixed;
+    display: flex;
     top: 0;
     left: 0;
-    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    
 }
 
-
-
-.container{
-    width: 94%;
+/*----------------------------------------El contenedor general--------------------------------------*/
+.contenedor{
+    width: 95%;
     margin: auto;
 }
 
-
-header .container {
+.logo{
+    width: 13%;
+    float: left;
+}
+h1{
+    float: left;
+}
+header .contenedor{
     display: table;
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-#logo {
-   width: 120px;
-   height: 65px;
-   float: left;
-   padding: 8px;
 }
 
 
-/*Limpiar los float*/
-
-header .container{
-    display: table;
-
+/*------------------------------------Estilo del la barra buscador--------------------------------------*/
+header .search{
+    float: left;
+    width: 50%;
+    height: 40px;
+    padding-top: 10px;
+}
+header .search input{
+    float: left;
+    width: 100%;
+    height: 100%;
+    color: black;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+}
+header .search input::placeholder{
+    color:black;
 }
 
-/*estilo en menu de la cabecera*/
-
+/*------------------------------------Estilo del menu en el header-------------------------------------*/
 #menu-bar{
     display: none;
 }
-
 header label{
     float: right;
     font-size: 28px;
     margin: 6px 0;
     cursor: pointer;
 }
-
-.menuHup{
+.menu{
     position: absolute;
     top: 50px;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgb(255, 234, 49, 0.9);
     transition: all 0.5s;
-    transform: translate(-100%);
+    transform: translateX(-100%);
+    border-radius: 8px;
 }
-
-
-.menuHup a{
+.menu a{
+    font-family: 'Bebas Neue', cursive;
     display: block;
-    color: #fff;
+    color: #FFF;
+    background: #333;
     height: 50px;
     text-decoration: none;
     padding: 15px;
-    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    margin: 0 0 0 11px;
 }
-
-.menuHup a:hover{
-    background: rgb(255, 255, 255,0.3);
+.menu a:hover{
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
 }
-
-#menu-bar:checked ~ .menuHup{
+#menu-bar:checked ~ .menu{
     transform: translateX(0%);
-
 }
 
+
+/*------------------------------------Estilo del carusel de imagenes-------------------------------------*/
+.Carousel{
+    width: 95%;
+    margin: 0px 50px;
+    padding-top: 30px;
+}
+#Bienvenidos{
+    margin-top: 20px;
+    text-align: center;
+}
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    opacity: 75%;
+    
+}
+.slick h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: #fff;
+    padding: 15px;
+}
+
+.slick h4 small{
+    font-size: 15px;
+    display: block;
+}
+
+/*------------------------------------Estilo de los botones-------------------------------------*/
+.slick-arrow{
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+}
+.slick-arrow:focus{
+    outline: 0;
+}
+.slick-arrow svg{
+    width: 12px;
+    height: 80%;
+    color: rgba(0,0,0,.7);
+}
+.slick-prev{
+    left: 0px;
+}
+.slick-next{
+    right: 0px;
+}
+
+
+/*-----------------------------------Estilo del elemento ordenar------------------------------------*/
+
+#contenedor_filter .contenedor{
+    display: flex;
+    background: #d7d7d7;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 15px;
+    padding-left: 5em;
+    color: brown;
+    font-family: 'Bebas Neue', cursive;
+}
+#contenedor_filter label, select{
+    margin: 7px;
+    
+    
+}
+
+
+/*----------------------------------------------Estilo del main-------------------------------------*/
+/*--------------------------------Estilo del contenedor de la película------------------------------*/
+#containerFilms{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.filmsGroup{
+    background-color: #3B3A65;
+    padding-top: 1em;
+    margin: 1em;
+    border-radius: 01em;
+    max-width: 150px;
+    min-width: 250px;
+    height: 450px;
+    display: grid;
+    flex-basis: 20%;
+    font-family: 'Bebas Neue', cursive;
+    color: aliceblue;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.filmsGroup .detalle-films hr{
+    background-color: #FFF;
+    width: 250px;
+    height: 10px;
+    margin-left: 0%;
+    padding: auto;
+    border-color: #FFF;
+}
+.filmsGroup .detalle-films p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.filmsGroup .detalle-films img{
+    padding-left: 1.5em;
+}
+
+/*-----------------------------------Estilo section personajes-----------------------------------*/
+#info {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+#info .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info-peli{
+    margin: 20px;
+}
+.info-peli img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+
+/*--------------------------------------Estilo del footer--------------------------------------*/
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.copy {
+    font-size: 20px;
+}
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+.sociales a{
+    color: #333;
+    text-decoration: none;
+}
+
+/*---------------------------------------Hacer responsive-------------------------------------*/
+/*---------------------------------------Responsive menu--------------------------------------*/
 @media (min-width: 1024px){
-    .menuHup{
+    .menu{
         position: static;
         width: auto;
         height: auto;
@@ -105,46 +297,43 @@ header label{
         float: right;
         display: flex;
     }
-
-    .menuHup a{
+    .menu a {
         border: none;
     }
-
-
-    header label {
+    header label{
         display: none;
+    }
+    .contenedor{
+        width: 1000px;
+    }
+    #banner img{
+        margin-top: -200px;
     }
 }
 
-img{
-    border-radius: 01em;
-    
-}
+@media (min-width: 480px){
+    #banner h2{
+        font-size: 40px;
+    }
+    #banner a{
+        margin-top: 25px;
+    }
+ }
 
-/*Estilos de las ventadas de films**/
+ @media (min-width: 768px){
+    #banner {
+        height: 300px;
+        overflow: hidden;
+    }
+    #banner img{
+        height: auto;
+        margin-top: -100px;
+    }
+    .sociales{
+        width: auto;
+    }
+    footer .contenedor{
+        justify-content: space-between;
+    }
 
-#containerFilms{/**contenedor de card*/
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1100px;
-    padding: 1em 1em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.filmsGroup{
-    box-shadow: 0 0 15px 0 black;
-    background-color: #3B3A65;
-    padding: 1em;
-    margin: 1em;
-    border-radius: 01em;
-    max-width:140px;
-    min-width: 240px;
-    height: 420px;
-    display: grid;
-    grid-template-columns: 53% 47%;
-    flex-basis: 30%;
-    color: aliceblue;
-    cursor: pointer;
-    white-space: nowrap;
-}
+ }
