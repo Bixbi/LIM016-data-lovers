@@ -21,6 +21,7 @@ const byScore = document.getElementById("byScore");
 const filmsList = (list) => {
     let count = 0;
     list.forEach((ghibli) => {
+        
         const frameFilms = document.createElement('div');
         frameFilms.className = 'filmsGroup';
         frameFilms.innerHTML = `<div class="detalle-films">
@@ -32,13 +33,78 @@ const filmsList = (list) => {
                                  <p class="title" >Año  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ${ghibli.release_date}</p>
                                  <p class="title" >Score &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ${ghibli.rt_score}</p>
                                  </div>`;
-        count += 1;
-        containerFilms.appendChild(frameFilms);
+
+            frameFilms.addEventListener('click', () => {
+
+                containerFilms.innerHTML = '';
+                frameFilms.style.position = 'absolute';
+                frameFilms.style.left = '20px';
+                frameFilms.style.display ='flex';
+                
+                const infopeli = document.createElement('div');
+                const h1 = document.createElement('h1');
+                const p = document.createElement('p');
+                
+                
+                infopeli.className = 'infopeli';
+                h1.innerHTML = ' DESCRIPCIÒN: ';
+                p.innerHTML = ghibli.description;
+                h1.innerHTML=' PERSONAJES ';
+
+                infopeli.appendChild(p);
+                infopeli.appendChild(h1);
+                
+                
+                const actores = ghibli.people;
+                for (let j = 0; j < actores.length; j++) {
+
+                    const hr = document.createElement('hr');
+                    const img = document.createElement('img');
+                    const h4 = document.createElement('h4');
+                    const h41 = document.createElement('h4');
+                    const h42 = document.createElement('h4');
+                    const h43 = document.createElement('h4');
+                    const h44 = document.createElement('h4');
+                    const h45 = document.createElement('h4');
+                    
+                    h4.textContent = 'NOMBRE: '+actores[j].name;
+                    h41.textContent = 'SEXO :' + actores[j].gender;
+                    h42.textContent = 'AÑOS :' + actores[j].age;
+                    h43.textContent = 'COLOR DE OJOS :' + actores[j].eye_color;
+                    h44.textContent = 'COLOR :' + actores[j].hair_color;
+                    h45.textContent = 'COLOR :' + actores[j].specie;
+                    img.src = actores[j].img;
+             
+                    infopeli.appendChild(hr);
+                    infopeli.appendChild(h4);
+                    infopeli.appendChild(img);
+                    infopeli.appendChild(h41);
+                    infopeli.appendChild(h42);
+                    infopeli.appendChild(h43);
+                    infopeli.appendChild(h44);
+                    infopeli.appendChild(h45);
+                    
+                }
+                
+                containerFilms.appendChild(frameFilms);
+                containerFilms.appendChild(infopeli);
+                
+
+            });
+            count += 1;
+            containerFilms.appendChild(frameFilms);
+
     });
     document.getElementById('countFilms').innerHTML = count;
     return containerFilms;
 };
 filmsList(filmsData);
+
+
+
+
+
+
 
 
 inputSearch.addEventListener('input', () => {

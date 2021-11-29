@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300&family=Mohave:wght@300&family=Open+Sans+Condensed:ital,wght@0,700;1,300&family=Open+Sans:wght@300;400;600&family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Merriweather:wght@300&family=Mohave:wght@300&family=Montserrat:wght@300&family=Open+Sans+Condensed:ital,wght@0,700;1,300&family=Open+Sans:wght@300;400;600&family=Oswald:wght@500&family=Saira+Condensed:wght@100&display=swap');
 
 /*----------selector universal, estilos básicos, box-sizing estilo de caja-----------*/
 *{
@@ -259,7 +260,35 @@ header label{
 .info-peli{
     margin: 20px;
 }
+
+.infopeli{
+    display:grid;
+    margin: 20px;
+    width: 150em;
+    padding: 0 4em;
+    padding-bottom: 5em;
+    background-color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+
+}
+
+.infopeli hr{
+    background-color: #002E58;
+    display: flex;
+    margin-left: 0%;
+    padding: auto;
+    border-color: black;
+}
+
 .info-peli img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+
+.infopeli img{
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -284,6 +313,15 @@ footer .contenedor{
 .sociales a{
     color: #333;
     text-decoration: none;
+}
+
+
+/*---------------------------------------tarjeta actores -------------------------------------*/
+
+.detalles  {
+    background-color: #3B3A65;
+
+
 }
 
 /*---------------------------------------Hacer responsive-------------------------------------*/
