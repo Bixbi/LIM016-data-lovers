@@ -46,8 +46,9 @@ const filmsList = (list) => {
                 const p = document.createElement('p');
                 
                 
+                
                 infopeli.className = 'infopeli';
-                h1.innerHTML = ' DESCRIPCIÒN: ';
+                h1.innerHTML = ' DESCRIPCIÓN:';
                 p.innerHTML = ghibli.description;
                 h1.innerHTML=' PERSONAJES ';
 
