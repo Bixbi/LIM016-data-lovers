@@ -138,8 +138,17 @@ header label{
     display: flex;
     justify-content: center;
     transition: .5s ease-in-out;
-    opacity: 75%;
+    opacity: 95%;
     
+}
+.slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
 }
 .slick h4{
     position: absolute;
@@ -245,6 +254,14 @@ header label{
     padding-left: 1.5em;
 }
 
+/*-------------------------------Estilo del contador de peliculas--------------------------------*/
+.countFilms p{
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: #333;
+    font-size: 23px;
+    
+}
+
 /*-----------------------------------Estilo section personajes-----------------------------------*/
 #info {
     background: #333;
@@ -270,7 +287,6 @@ header label{
     background-color: #ddd;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-
 }
 
 .infopeli hr{
