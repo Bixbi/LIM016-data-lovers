@@ -1,13 +1,16 @@
-import { example, anotherExample } from '../src/data.js';
+import {
+  generalFilter,
+  
+} from "../src/data.js";
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe("generalFilter", () => {
+  it("is a function", () => {
+    expect(typeof example).toBe("function");
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it("returns `example`", () => {
+    expect(example()).toBe("example");
   });
 });
 
