@@ -1,0 +1,65 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(./img/registroFA.jpeg) no-repeat fixed center center;
+  background-size: cover;
+}
+*{
+  box-sizing: border-box;
+}
+.contenedor{
+  width: 100%;
+  padding: 15px;
+}
+.formulario{
+  background-color: rgba(245, 243, 243, 0.5);
+  margin-top: 150px;
+  padding: 30px;
+}
+h2{
+  text-align: le;
+  color: black;
+  font-size: 40px;
+}
+input[type="text"],
+input[type="password"]{
+  color: rgb(0, 0, 0);
+  background-color: rgba(242, 204, 204, 0.5);
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+}
+.input-contenedor{
+  margin-bottom: 15px;
+  border: 1px solid rgb(7, 1, 1);
+  border-radius: 5px;
+}
+.icon{
+ min-width: 50px;
+ text-align: center;
+ color: rgb(12, 7, 7);
+}
+.button{
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background: #be1818;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover{
+  background: blueviolet;
+}
+p{
+  text-align: center;
+}
+@media(min-width:768px){
+  .formulario{
+      margin: auto;
+      width: 500px;
+      margin-top: 150px;
+      border-radius: 2%;
+  }
+
+}
