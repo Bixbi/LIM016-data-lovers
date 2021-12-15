@@ -17,7 +17,6 @@ export const orderFilms = (arrayObj, orderBy) => {
     case 'a-z':
       sortObj = arrayObj.sort((a, b) => ((a.title <= b.title) ? -1 : 1));
       break;
-    default:
   }
   return sortObj;
 };
